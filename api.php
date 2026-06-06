@@ -1,10 +1,12 @@
+// Proxy pentru interogarea securizata a GitHub API si gestionarea fallback-ului local
 <?php
+
 require_once 'config.php';
 
 header('Content-Type: application/json');
 
 $username = 'AntoniaSchiopu1'; 
-$token = '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'; 
+$token = ''; // Token-ul va fi setat prin variabilă de mediu
 
 $proiecte_locale = [];
 $sql = "SELECT * FROM proiecte_locale";
@@ -27,11 +29,9 @@ $url = "https://api.github.com/users/$username/repos";
 $options = [
     'http' => [
         'method' => 'GET',
-        'header' => [
-            "User-Agent: PHP-Proxy-App",
-            "Authorization: token $token"
-        ],
-        'ignore_errors' => true
+        'header' => "User-Agent: PHP-Proxy-App\r\n" . "Authorization: token $token\r\n",
+        'ignore_errors' => true,
+        'timeout' => 5 // Limităm timpul de așteptare la 5 secunde pentru performanță
     ]
 ];
 
@@ -59,8 +59,8 @@ foreach ($github_repos as $repo) {
     }
 
     $nume = $repo['name'];
-    
     $descriere = !empty($repo['description']) ? $repo['description'] : "Fara descriere disponibila.";
+    
     if (($descriere === "Fara descriere disponibila." || empty($repo['description'])) && isset($proiecte_locale[$nume])) {
         $descriere = $proiecte_locale[$nume]['description'];
     }
@@ -80,7 +80,7 @@ usort($rezultat_final, function($a, $b) {
     return strtotime($b['updated_at']) - strtotime($a['updated_at']);
 });
 
-if (count($rezultat_final) < 5) {
+if (count($rezultat_final) < 4) {
     foreach ($proiecte_locale as $nume_local => $date_locale) {
         $exista = false;
         foreach ($rezultat_final as $rf) {
