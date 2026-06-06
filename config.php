@@ -1,14 +1,17 @@
+// Conectare la baza de date MySQL 
 <?php
-// config.php
 $host = 'localhost';
 $user = 'root';
 $password = '';
 $database = 'portofoliu_antonia';
 
-$conn = new mysqli($host, $user, $password, $database);
+$conn = @new mysqli($host, $user, $password, $database);
 
 if ($conn->connect_error) {
-    die('Conexiune esuata: ' . $conn->connect_error);
+    $eroare_conexiune = true; 
+} else {
+   
+    $conn->set_charset('utf8mb4'); 
 }
-$conn->set_charset('utf8');
+
 ?>
