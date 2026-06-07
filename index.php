@@ -481,8 +481,7 @@
             <div class="section-container">
                 <h2 class="section-headline">Despre mine</h2>
                 <div class="cyber-panel">
-                    Studentă în anul II la Ingineria Calculatoarelor (ULBS), axată pe însușirea fundamentelor de programare, ale algoritmicii, electronicii și matematicii. Dețin cunoștințe de C++, Java, Python și electrică. Îmi doresc obținerea unui stagiu de practică, cu posibilitatea de prelungire într-un internship, pentru a contribui activ în cadrul unei echipe și pentru a-mi construi o bază solidă în domeniu.
-                </div>
+                    Studentă în anul II la Ingineria Calculatoarelor (ULBS), axată pe însușirea fundamentelor de programare, ale algoritmicii, electronicii și matematicii. Dețin cunoștințe de C++, Java, Python și electrică. 
             </div>
 
             <div class="section-container">
@@ -510,7 +509,7 @@
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-title">Școala Gimnazială 'Badea Cîrțan' Cîrțișoara</div>
-                            <div class="timeline-date">2010 - 2020</div>
+                            <div class="timeline-date"> octombrie 2010 - iunie 2020</div>
                         </div>
                     </div>
                 </div>
@@ -567,18 +566,18 @@
                     <div class="cyber-list">
                         <div class="cyber-list-item">
                             <span class="cyber-list-title">Dansuri populare</span>
-                            Practicate pe parcursul a 9 ani, activitate colectivă de înaltă coordonare care mi-a definit disciplina, rigurozitatea și spiritul de cooperare în echipă.
+                            Practicate pe parcursul a 9 ani, activitate colectivă de înaltă coordonare care mi-a definit disciplina și spiritul de cooperare în echipă.
                         </div>
                         <div class="cyber-list-item">
                             <span class="cyber-list-title">Sport și drumeții</span>
-                            Antrenamentele fizice și drumețiile montane îmi consolidează anduranța, rezistența la stres și capacitatea de concentrare pe termene lungi.
+                            Antrenamentele fizice și drumețiile montane îmi consolidează  capacitatea de concentrare pe termene lungi.
                         </div>
                         <div class="cyber-list-item">
                             <span class="cyber-list-title">Călătorii</span>
                             Explorarea spațiilor noi îmi dezvoltă adaptabilitatea rapidă și abilitatea de a analiza situațiile complexe din perspective diferite.
                         </div>
                         <div style="margin-top:15px; border-top: 1px dashed #21262d; padding-top:15px; font-size:0.95rem; opacity:0.85;">
-                            <strong>Calități cheie:</strong> Orientare algoritmică spre rezolvarea problemelor logice, punctualitate, spirit de inițiativă colectivă și capacitate avansată de auto-învățare accelerată.
+                            <strong>Calități cheie:</strong> orientare algoritmică spre rezolvarea problemelor logice, punctualitate, spirit de inițiativă colectivă.
                         </div>
                     </div>
                 </div>
